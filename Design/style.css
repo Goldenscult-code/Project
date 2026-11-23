@@ -14,11 +14,15 @@
 .header {
 	margin: 0 auto;
 	width: 100%;
-	min-height: 100vh;
+	min-height: 7vh;
 	display: flex;
 	flex-direction: column;
 	gap: var(--row-gap);
 	border: 5px solid rgb(1, 1, 1);
+}
+.content {
+  width: 100%;
+  
 }
 
 .row {
