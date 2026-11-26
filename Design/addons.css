@@ -1,0 +1,58 @@
+body {
+  margin: 0; 
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #4e4e4e;
+    border-radius: 0px 0px 20px 20px;
+    flex-direction: column;
+}
+.addon-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.addon {
+    flex: 1 1 250px;
+    padding: 20px;
+    background: #4e4e4e;
+    border-radius: 8px;
+    height: auto;
+    font-size: 15px;
+    margin: 2%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-basis: 33.33%;
+    flex-grow: 1;
+
+
+}
+
+.addon img {
+    width: auto;
+    height: auto;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.buttons-top {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.back-button {
+    background-color: #4e4e4e;
+    padding: 10px 20px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+}
