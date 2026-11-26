@@ -18,10 +18,13 @@
 	display: flex;
 	flex-direction: column;
 	gap: var(--row-gap);
+  background-color: #59517b;
 }
+
 .video{
   width: 100%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 .content {
   margin: 0 auto;
@@ -30,6 +33,8 @@
 	display: flex;
 	flex-direction: vertical;
 	gap: var(--row-gap);
+  border-radius: 0px;
+  text-align: start;
 }
 
 .row{
