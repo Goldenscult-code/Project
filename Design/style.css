@@ -16,14 +16,13 @@ body{
 
 .video{
     position: relative;
-    border-radius: 15px;
 }
 
 #myVideo{
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius:0px 0px 15px 15px;
 }
 
 .header {
@@ -45,15 +44,31 @@ body{
 
 .content {
   margin: 0 auto;
-	width: 100%;
-	min-height: 93vh;
+	min-height: 60vh;
 	display: flex;
 	flex-direction: vertical;
 	gap: var(--row-gap);
   border-radius: 60px;
   justify-content: flex-start;
   align-items: flex-start;
+  text-align:left;
   margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.content h1{
+text-align: center;
+}
+
+.link-box{
+  display: inline-block;
+  padding: 1px 1px;
+  border: 2px solid #c9722f;
+  border-radius: 8px;
+  background-color: #c9722f;
+  color: #f9dda5;
+  text-decoration:none;
+  font-weight: 300;
 }
 .footer {
  margin-top: 5px;
