@@ -112,7 +112,7 @@ a {
 
 
 .addon img:hover {
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .buttons-top {
@@ -136,4 +136,24 @@ a {
     padding: 10px 20px;
     border: 3px solid #000000;
     border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #885406;
+  border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #ce871d;
+  border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e16704;
 }
