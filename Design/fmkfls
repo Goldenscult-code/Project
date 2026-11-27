@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+:root {
+	--row-gap: 10px;
+	--column-gap: 10px;
+	--column-padding: 10px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	gap: var(--row-gap);
+}
+
+.row {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: var(--column-gap);
+	flex-direction: row-reverse;
+    
+}
+
+[class^="col-"] {
+	padding: var(--column-padding);
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	align-items: center;
+	border: 3px solid #5a5959;
+    border-radius: 10px;
+}
+
+
+.col-header {
+    display: flex;
+    flex-basis: 16.6667%;
+    justify-content: center;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  background-color: #ffefcb;
+}
+
+
+:root {
+	--row-gap: 10px;
+	--column-gap: 10px;
+	--column-padding: 10px;
+}
+
+.header {
+	margin: 0 auto;
+	margin: auto;
+	width: 100%;
+	min-height: 7vh;
+	display: flex;
+	flex-direction: column;
+	gap: var(--row-gap);
+  background-color: #59517b;
+  position: sticky;
+  top: 0;
+  align-items: center;
+}
+
+
+
+.content {
+  margin: 0 auto;
+	width: 100%;
+	min-height: 93vh;
+	display: flex;
+	flex-direction: vertical;
+	gap: var(--row-gap);
+  border-radius: 0px;
+  text-align: start;
+  border-radius: 60px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+.footer {
+ margin-top: 5px;
+}
+
+.row{
+	display: flex;
+	flex-wrap: nowrap;
+	gap: var(--column-gap);
+}
+
+[class^="col-"] {
+	padding: var(--column-padding);
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	align-items: center;
+	border: 1px solid #000;
+}
+
+ .col-1 {
+    flex-grow: 0;
+    flex-basis: 8.33%;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 0px;
+  }
+  .col-2{
+    flex-grow: 0;
+    flex-basis: 16.67%;
+  }
+  .col-3{
+    flex-grow: 0;
+    flex-basis: 25%;
+  }
+  .col-4{
+    flex-grow: 0;
+    flex-basis: 33.33%;
+  }
+  .col-5{
+    flex-grow: 0;
+    flex-basis: 41.67%;
+  }
+  .col-6{
+    flex-grow: 0;
+    flex-basis: 50%;
+  }
+  .col-7{
+    flex-grow: 0;
+    flex-basis: 58.33%;
+  }
+  .col-8{
+    flex-grow: 0;
+    flex-basis: 66.67%;
+  }
+  .col-9{
+    flex-grow: 0;
+    flex-basis: 75%;
+  }
+  .col-10{
+    flex-grow: 0;
+    flex-basis: 83.33%;
+  }
+  .col-11{
+    flex-grow: 0;
+    flex-basis: 91.67%;
+  }
+  .col-12 {
+    flex-grow: 0;
+    flex-basis: 100%;
+  }

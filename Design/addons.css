@@ -1,17 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0; 
+    background-color: #f9dda5;
+}
+
+
+:root {
+    --row-gap: 10px;
+    --column-gap: 10px;
+    --column-padding: 10px;
 }
 
 .header {
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
+    margin: auto;
+    width: 100%;
+    min-height: 7vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--row-gap);
     position: sticky;
     top: 0;
-    background-color: #4e4e4e;
-    border-radius: 0px 0px 20px 20px;
-    flex-direction: column;
+    align-items: center;
 }
+
+
+
+.content {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 93vh;
+    display: flex;
+    flex-direction: vertical;
+    gap: var(--row-gap);
+    border-radius: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.footer {
+    margin-top: 5px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--column-gap);
+}
+
+[class^="col-"] {
+    padding: var(--column-padding);
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+
+}
+
+a {
+    color: black;
+}
+
+
+.col-1 {
+    flex-grow: 0;
+    flex-basis: 8.33%;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 0px;
+    background-color: #c9722f;
+    border: 3px solid #000000;
+    min-width: 100px;
+    justify-content: center;
+}
+
 .addon-list {
     display: flex;
     gap: 10px;
@@ -20,19 +85,18 @@ body {
 }
 
 .addon {
-    flex: 1 1 250px;
-    padding: 20px;
-    background: #4e4e4e;
-    border-radius: 8px;
-    height: auto;
+    border: 3px solid #000000;
+    background: #c9722f;
+    border-radius: 10px;
+    padding: 10px;
     font-size: 15px;
     margin: 2%;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-basis: 33.33%;
     flex-grow: 1;
-
-
+    border-radius: 10px;
+    min-height: 300px;
 }
 
 .addon img {
@@ -40,7 +104,15 @@ body {
     height: auto;
     max-height: 120px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 50%;
+    opacity: 1;
+    border: 3px solid#000000;
+    transition: opacity 2s;
+}
+
+
+.addon img:hover {
+    opacity: 0.8;
 }
 
 .buttons-top {
@@ -50,9 +122,18 @@ body {
     justify-content: space-between;
 }
 
-.back-button {
-    background-color: #4e4e4e;
+.mid-number {
+    background-color: #c9722f;
     padding: 10px 20px;
-    border: 5px solid #000000;
+    border: 3px solid #000000;
+    border-radius: 10px;
+
+
+}
+
+.back-button {
+    background-color: #c9722f;
+    padding: 10px 20px;
+    border: 3px solid #000000;
     border-radius: 10px;
 }
